@@ -116,11 +116,292 @@
 
 
 .question-image {
-  width: 50%;
-  max-width: 720px;     /* adjust as you like */
+  display: block;            /* required for margin auto */
+  margin: 20px auto;         /* 👈 centers horizontally */
+  width: 100%;               /* responsive */
+  max-width: 900px;          /* 👈 increase size (try 800–1000px) */
   height: auto;
-  display: block;
-  margin: 16px 0 18px;  /* space between question and options */
   border-radius: 14px;
   object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .question-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* REPORT CARD RESULTS */
+.results {
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.report-card {
+  width: 100%;
+  max-width: 980px;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.report-header {
+  padding: 22px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.00));
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.report-label {
+  margin: 0 0 6px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.report-title {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.15;
+}
+
+.report-subtitle {
+  margin: 8px 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+  max-width: 560px;
+}
+
+.report-badge {
+  min-width: 160px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.7);
+}
+
+.badge-top {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+}
+
+.badge-main {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.badge-bottom {
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.report-grid {
+  padding: 18px 20px 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.report-section {
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 14px;
+  padding: 16px;
+  background: #fff;
+}
+
+.section-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+.pill-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.10);
+  background: rgba(0,0,0,0.03);
+  font-size: 13px;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.bullets li {
+  margin: 8px 0;
+  line-height: 1.35;
+}
+
+.chapters {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.chapter-item {
+  margin: 8px 0;
+  line-height: 1.35;
+}
+
+.report-cta .cta-text {
+  margin: 0 0 12px;
+  opacity: 0.85;
+  line-height: 1.35;
+}
+
+.cta-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.14);
+  background: rgba(0,0,0,0.06);
+  font-weight: 600;
+}
+
+.cta-btn:hover {
+  background: rgba(0,0,0,0.10);
+}
+
+.report-footer {
+  padding: 14px 20px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* MOBILE: stack sections */
+@media (max-width: 800px) {
+  .report-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .report-badge {
+    width: 100%;
+  }
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+  .report-title {
+    font-size: 22px;
+  }
+}
+
+.audiobook-preview {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.audiobook-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.audiobook-caption {
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.audiobook-preview {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.audiobook-image {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 12px;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.audiobook-caption {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+.audiobook-audio {
+  width: 100%;
+  max-width: 420px;
+  margin: 10px auto 14px;
+  display: block;
+}
+
+.audiobook-link-text {
+  margin: 6px 0 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.audiobook-link {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.15);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.audiobook-link:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+
+.intro {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.intro-hero-image {
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.intro-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+.header {
+  padding: 12px 0;
+  opacity: 0.85;
+}
+
+.logo {
+  max-height: 36px;
 }
