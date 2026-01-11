@@ -405,3 +405,21 @@
 .logo {
   max-height: 36px;
 }
+
+.intro-title {
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  white-space: nowrap;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  padding-top: 1.5rem; /* reduce if currently larger */
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+

@@ -493,7 +493,15 @@ const results = submitted ? buildResults(answers) : null;
     <h2 className="intro-subtitle">
       Discover what may be holding you back — and what God is preparing you for next.
     </h2>
-
+ <button
+      className="primary-btn"
+      onClick={() => {
+        setShowIntro(false);
+        setQuizStarted(true);
+      }}
+    >
+      Take the Quiz
+    </button>
     {/* Hero image */}
     <img
       src={`${import.meta.env.BASE_URL}images/cover_page.png`}
@@ -510,16 +518,6 @@ const results = submitted ? buildResults(answers) : null;
     <p className="intro-meta">
       ⏱ Takes less than 3 minutes • 🙏 Faith-centered • 💛 Private
     </p>
-
-    <button
-      className="primary-btn"
-      onClick={() => {
-        setShowIntro(false);
-        setQuizStarted(true);
-      }}
-    >
-      Take the Quiz
-    </button>
   </section>
 )}
           {/* Option B: local/video file (uncomment and remove the iframe if you prefer)
