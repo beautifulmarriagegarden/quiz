@@ -525,3 +525,58 @@
   padding-top: 60px;
 }
 */
+
+.lead-card {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 28px 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.lead-title {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.lead-subtitle {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.lead-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 12px;
+}
+
+
+.lead-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #2f5d50; /* deep, faith-safe green */
+  color: white;
+  margin-top: 8px;
+}
+
+.lead-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.lead-privacy {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 12px;
+}

@@ -663,10 +663,28 @@ const showBrandHeader =
 {/* Lead Capture (after questions, before results) */}
 {showLeadForm && !submitted && (
   <div className="start-screen">
-    <h2>Almost done 🎉</h2>
-    <p>Enter your details to view your personalized results.</p>
+    <h2 className="lead-title">Your Results Are Ready 🎉</h2>
+    <p className="lead-subtitle">
+      Enter your details to receive your personalized reflection.
+    </p>
 
-    <input
+  <input
+  className="lead-input"
+  type="text"
+  placeholder="Your first name"
+  value={name}
+  onChange={e => setName(e.target.value)}
+/>
+
+<input
+  className="lead-input"
+  type="email"
+  placeholder="Your email address"
+  value={email}
+  onChange={e => setEmail(e.target.value)}
+/>
+
+  {/*  <input
       type="text"
       placeholder="Your Name"
       value={name}
@@ -677,13 +695,25 @@ const showBrandHeader =
       placeholder="Your Email"
       value={email}
       onChange={e => setEmail(e.target.value)}
-    />
+    /> */}
 
     {formError && <p style={{ color: "red" }}>{formError}</p>}
 
-    <button onClick={submitLeadAndShowResults} disabled={savingLead}>
+    <button
+  className="lead-btn"
+  onClick={submitLeadAndShowResults}
+  disabled={savingLead}
+>
+  {savingLead ? "Preparing your results..." : "View My Results"}
+</button>
+
+<p className="lead-privacy">
+  🔒 Your information is private and will never be shared.
+</p>
+
+  {/* <button onClick={submitLeadAndShowResults} disabled={savingLead}>
       {savingLead ? "Saving..." : "Show My Results"}
-    </button>
+    </button> */}
   </div>
 )}
 
