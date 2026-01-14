@@ -760,6 +760,10 @@ const showBrandHeader =
         
       <section className="report-section">
   <h3 className="section-title">Recommended Chapters</h3>
+   <p className="section-subtitle">
+    Based on your responses, the following chapters from the book: <em>"Single and Searching? The Lady’s Guide to Find and Attract the Right Husband"</em> 
+    are a helpful place to begin your personal reflection and growth.
+  </p>
 
   <ol className="chapters">
     {results.chapters.map((c, i) => (
@@ -812,8 +816,8 @@ const showBrandHeader =
           </p>
 
           {/* Replace with your real link later */}
-          <a className="cta-btn" href="https://beautifulmarriagegarden.com" target="_blank" rel="noreferrer">
-            Visit Beautiful Marriage Garden
+          <a className="cta-btn" href="https://payhip.com/b/bO6Gw" target="_blank" rel="noreferrer">
+            Begin Your Next Step with this Guide
           </a>
         </section>
       </div>

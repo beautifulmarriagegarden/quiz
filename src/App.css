@@ -117,12 +117,49 @@
 } */
 
 .primary-btn {
+  width: 100%;
+  max-width: 520px;
+  margin: 20px auto 12px;
+  display: block;
+
+  padding: 16px 18px;
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  border-radius: 12px;
+  border: none;
+
+  background: #2f5f4f; /* deep green (matches trust + faith tone) */
+  color: #ffffff;
+
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  opacity: 0.95;
+}
+
+.primary-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.intro-trust {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: 6px;
+}
+
+  /* .primary-btn {
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-}
+}*/
 
 /*
 .form-error {
@@ -547,7 +584,22 @@
   margin-bottom: 20px;
 }
 
+
 .lead-input {
+  width: 100%;
+  max-width: 520px;        /* 👈 matches button width */
+  margin: 0 auto 14px;     /* 👈 centers + spacing */
+
+  padding: 14px 16px;
+  font-size: 1rem;
+
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.18);
+
+  box-sizing: border-box;
+}
+
+/*.lead-input {
   width: 100%;
   padding: 14px 16px;
   font-size: 1rem;
@@ -555,7 +607,7 @@
   border: 1px solid rgba(0,0,0,0.2);
   margin-bottom: 12px;
 }
-
+*/
 
 .lead-btn {
   width: 100%;
