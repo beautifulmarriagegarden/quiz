@@ -506,51 +506,50 @@ const showBrandHeader =
 {showIntro && !quizStarted && !submitted && (
   <section className="intro">
 
-    <h1 className="intro-title">Why Hasn't Marriage Happened Yet?</h1>
-    <h2 className="intro-subheadline">Discover the hidden factors shaping your journey.</h2>
-    <h2 className="intro-subtitle">
-     Take this free 3-minute faith-based assessment and receive personalized insights about:
+ <h2 className="intro-.intro-title">
+      Why Hasn't Marriage Happened Yet? 
     </h2>
-   
 
-   <div className="intro-benefits">
-  <p>💜 Discover your relationship strengths</p>
-  <p>🔍 Identify hidden obstacles</p>
-  <p>🌱 Understand your emotional readiness</p>
-  <p>🧭 Receive practical next steps</p>
-</div>
+    <h2 className="intro-subheadline">
+            Discover the hidden factors shaping your journey.
+    </h2>
 
- <button
+
+    <h2 className="intro-subsubheadline">
+      Take this free 1-minute faith-based assessment and receive personalized insights about:
+    </h2>
+
+    <div className="intro-benefits">
+      <div>💜 <strong>Relationship Strengths</strong></div>
+      <div>🔍 <strong>Hidden Obstacles</strong></div>
+      <div>🌱 <strong>Emotional Readiness</strong></div>
+      <div>🧭 <strong>Next Steps</strong></div>
+    </div>
+
+    <button
       className="primary-btn"
       onClick={() => {
         setShowIntro(false);
         setQuizStarted(true);
       }}
-  >
-    Get My Personalized Results
-     {/*  Take the Quiz */}
+    >
+      Get My Personalized Results
     </button>
 
-    {/* 
-    <p className="intro-description">
-      Answer 10 quick questions to receive a personalized reflection
-      based on where you are emotionally, spiritually, and relationally.
-    </p>
-   */}
-
-    {/* Hero image  cover_page.png*/}
     <img
       src={`${import.meta.env.BASE_URL}images/image111.png`}
-      alt="Single and Searching Audiobook"
+      alt="Sample personalized quiz results"
       className="intro-hero-image"
       loading="eager"
     />
 
     <p className="intro-meta">
-      ⏱ Takes less than 3 minutes • 🙏 Faith-centered • 💛 Private
+      ⏱ Takes less than 1 minutes • 🙏 Faith-centered • 💛 Private
     </p>
   </section>
 )}
+
+
           {/* Option B: local/video file (uncomment and remove the iframe if you prefer)
           <video className="video-file" controls playsInline preload="metadata">
             <source src="/intro.mp4" type="video/mp4" />
