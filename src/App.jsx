@@ -544,8 +544,10 @@ const showBrandHeader =
     />
 
     <p className="intro-meta">
-      ⏱ Takes less than 1 minutes • 🙏 Faith-centered • 💛 Private
+    🌸 Join hundreds of women discovering their next step toward a Christ-centered relationship.
+    ⏱ Takes less than 1 minutes • 🙏 Faith-centered • 💛 Private
     </p>
+
   </section>
 )}
 
