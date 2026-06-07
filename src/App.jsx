@@ -500,32 +500,47 @@ const showBrandHeader =
     <div className="App">  
         {showBrandHeader && <BrandHeader />}
 
-     {/* INTRO SCREEN — high-conversion version */}
+     {/* INTRO SCREEN — high-conversion version  Single and Searching? You’re not behind.*/}
+     {/* Discover what may be holding you back — and what God is preparing you for next..*/}
+
 {showIntro && !quizStarted && !submitted && (
   <section className="intro">
 
-    <h1 className="intro-title">Single and Searching?</h1>
-    <h1 className="intro-title">You’re not behind.</h1>
+    <h1 className="intro-title">Why Hasn't Marriage Happened Yet?</h1>
+    <h2 className="intro-subheadline">Discover the hidden factors shaping your journey.</h2>
     <h2 className="intro-subtitle">
-      Discover what may be holding you back — and what God is preparing you for next.
+     Take this free 3-minute faith-based assessment and receive personalized insights about:
     </h2>
+   
+
+   <div className="intro-benefits">
+  <p>💜 Discover your relationship strengths</p>
+  <p>🔍 Identify hidden obstacles</p>
+  <p>🌱 Understand your emotional readiness</p>
+  <p>🧭 Receive practical next steps</p>
+</div>
+
  <button
       className="primary-btn"
       onClick={() => {
         setShowIntro(false);
         setQuizStarted(true);
       }}
-    >
-      Take the Quiz
+  >
+    Get My Personalized Results
+     {/*  Take the Quiz */}
     </button>
+
+    {/* 
     <p className="intro-description">
       Answer 10 quick questions to receive a personalized reflection
       based on where you are emotionally, spiritually, and relationally.
     </p>
+   */}
 
-    {/* Hero image */}
+    {/* Hero image  cover_page.png*/}
     <img
-      src={`${import.meta.env.BASE_URL}images/cover_page.png`}
+      src={`${import.meta.env.BASE_URL}images/image111.png`}
       alt="Single and Searching Audiobook"
       className="intro-hero-image"
       loading="eager"
@@ -729,11 +744,11 @@ const showBrandHeader =
           <p className="report-subtitle">A snapshot of where you are right now — and what to focus on next.</p>
         </div>
 
-        {/* Optional badge (you can change the label) */}
+        {/* Optional badge (you can change the label) Status Growth Season */}
         <div className="report-badge">
-          <div className="badge-top">Status</div>
+          <div className="badge-top">YOUR CURRENT SEASON</div>
           <div className="badge-main">In Progress</div>
-          <div className="badge-bottom">Growth Season</div>
+          <div className="badge-bottom">Growth & Preparation</div>
         </div>
       </div>
 
