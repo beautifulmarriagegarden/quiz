@@ -229,7 +229,16 @@ const RULES = [
                       answers[0] === "Anxiety about whether it will ever happen",
     message:
       "Fear and anxiety may be shaping your expectations. God desires to lead you from peace, not pressure or fear.",
-    chapters: ["Chapter 1 (Fear)", "Chapter 2 (Loneliness)"]
+    chapters: [
+    {
+      title: "Chapter 1 (Fear)",
+      url: "https://payhip.com/b/nu4ON"
+    },
+    {
+      title: "Chapter 2 (Loneliness)",
+      url: "https://payhip.com/b/pYvWg"
+    }
+    ]
   },
   {
     id: "q2_unhealed",
@@ -237,7 +246,12 @@ const RULES = [
                       answers[1] === "I try not to think about the past at all",
     message:
       "Unhealed wounds can quietly shape who we attract and how we respond to love.",
-    chapters: ["Chapter 3 (Hurt from Past Love Relationships)"]
+    chapters: [
+      {
+      title: "Chapter 3 (Hurt from Past Love Relationships)",
+      url: "https://payhip.com/b/fH1uG"
+      }
+    ]
   },
   {
     id: "q3_emotion_pressure",
@@ -245,7 +259,12 @@ const RULES = [
                       answers[2] === "Timing and pressure",
     message:
       "God’s will is often confirmed through peace, not urgency or emotional highs.",
-    chapters: ["Chapter 6 (Identifying God’s Will)"]
+    chapters: [
+      {
+      title: "Chapter 6 (Identifying God’s Will)",
+      url: "https://payhip.com/b/z0oqk"
+      } 
+    ]
   },
   {
     id: "q4_prayer",
@@ -254,7 +273,16 @@ const RULES = [
                       answers[3] ===  "I pray occasionally",
     message:
       "Prayer is not a last resort; it’s the foundation of clarity and peace.",
-    chapters: ["Chapter 7 (The Role of Prayer)", "Chapter 8 (Real-Life Stories)"]
+    chapters: [
+       {
+      title: "Chapter 7 (The Role of Prayer)",
+      url: "https://payhip.com/b/fjYmn"
+      },
+       {
+      title: "Chapter 8 (Real-Life Stories)",
+      url: "https://payhip.com/b/IcD5Q"
+      }    
+    ]
   },
   {
     id: "q5_connections",
@@ -262,7 +290,12 @@ const RULES = [
                       answers[4] === "I avoid connections due to fear or disappointment",
     message:
       "Faith includes action. God often works through connections and community.",
-    chapters: ["Chapter 9 (Circles of Connection)"]
+    chapters: [
+      {
+      title: "Chapter 9 (Circles of Connection)",
+      url: "https://payhip.com/b/gAG5V"
+      }
+    ]
   },
   {
     id: "q6_wise_voices",
@@ -270,14 +303,24 @@ const RULES = [
                       answers[5] === "I feel uncomfortable with recommendations",
     message:
       "God often uses trusted voices to protect and guide us.",
-    chapters: ["Chapter 10 (Opening Up & Wise Voices)"]
+    chapters: [
+      {
+      title: "Chapter 10 (Opening Up & Wise Voices)",
+      url: "https://payhip.com/b/QKB0q"
+      }
+    ]
   },
   {
     id: "q7_external_focus",
     when: (answers) => answers[6] === "Finding the right man",
     message:
       "Preparation attracts healthy love more than pursuit ever could.",
-    chapters: ["Chapter 13 (Becoming the Woman He Wants to Marry)"]
+    chapters: [
+      {
+      title: "Chapter 13 (Becoming the Woman He Wants to Marry)",
+      url: "https://payhip.com/b/c4nwq"
+      }
+    ]
   },
   {
     id: "q8_mindset",
@@ -285,7 +328,12 @@ const RULES = [
                       answers[7] === "I fear marriage may limit me",
     message:
       "A healthy mindset creates a healthy marriage foundation.",
-    chapters: ["Chapter 14 (Right Mindset About Marriage)"]
+    chapters: [
+      {
+      title: "Chapter 14 (Right Mindset About Marriage)",
+      url: "https://payhip.com/b/EqwAJ"
+      }
+    ]
   },
   {
     id: "q9_presentation",
@@ -293,7 +341,12 @@ const RULES = [
                       answers[8] === "I struggle to find balance",
     message:
       "How you present yourself communicates your values before words do.",
-    chapters: ["Chapter 15 (Look Presentable, Not Seductive)"]
+    chapters: [
+      {
+      title: "Chapter 15 (Look Presentable, Not Seductive)",
+      url: "https://payhip.com/b/drK2j"
+      }
+    ]
   },
   {
     id: "q10_commitment",
@@ -301,7 +354,16 @@ const RULES = [
                       answers[9] === "Feel confused and emotionally drained",
     message:
       "Clarity protects your heart and time.",
-    chapters: ["Chapter 16 (Responding to Proposals)", "Chapter 17 (Interest Without Commitment)"]
+    chapters: [
+       {
+      title: "Chapter 16 (Responding to Proposals)",
+      url: "https://payhip.com/b/UovJm"
+      },
+       {
+      title:  "Chapter 17 (Interest Without Commitment)",
+      url: "https://payhip.com/b/pBfTv"
+      }
+      ]
   }
 ];
 
@@ -782,9 +844,19 @@ const showBrandHeader =
   </p>
 
   <ol className="chapters">
-    {results.chapters.map((c, i) => (
-      <li key={i} className="chapter-item">{c}</li>
-    ))}
+   {results.chapters.map((chapter, index) => (
+    <li key={index} className="chapter-item">
+      <strong>{chapter.title}</strong>
+      <br />
+      <a
+        href={chapter.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🎧 Download Free Audio Chapter
+      </a>
+    </li>
+  ))}
   </ol>
 
   {/* Audiobook preview */}
