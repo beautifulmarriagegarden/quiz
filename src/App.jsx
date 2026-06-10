@@ -3,7 +3,7 @@ import "./App.css";
 // import getFeedback from "./feedback.js";
 
 // Replace with your Apps Script Web App URL
-const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycby8MBdxCZEA3rqtnUyLstVdFDbCMx4D2FtJMzO6iOimQgL2Fe8jYFQc41aKVBzRePIsnA/exec";
+const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbxIfN1FdJWR-P_jjjBInuNQ8JQ70CFSCTA2c38vtZ7JY0g0_YQp7y-A6AD79_yQFf5law/exec";
 
 async function saveLead(name, email, answers,results) {
   // Send URL-encoded form data (simple request → no preflight)
